@@ -6,3 +6,4 @@ describe("joinNames", () => {
     expect(joinNames([{name: 'Rose'}, {name: 'Martha'}, {name: 'Donna'}, {name: 'Amy'}, {name: 'Rory'}, {name: 'Clara'}, {name: 'Bill'}])).toBe('Rose, Martha, Donna, Amy, Rory, Clara & Bill')
   });
 });
+//Need a test if there are only two names, or only one name or no names
