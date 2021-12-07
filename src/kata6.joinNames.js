@@ -12,8 +12,6 @@ const joinNames = namesObj => {
             newString += `, ${namesObj[i].name}`
         } else if (i = (namesObj.length - 1))  {
             newString += ` & ${namesObj[i].name}`
-        } else {
-            
         }
     }
     return newString;
