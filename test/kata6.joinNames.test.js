@@ -2,8 +2,9 @@ const { joinNames } = require("../src");
 
 describe("joinNames", () => {
   test("returns string of names, seperated by commas and an ampersand", () => {
+    expect(joinNames([{name: 'Han'}])).toBe('Han')
+    expect(joinNames([{name: 'Jack'}, {name: 'Jill'}])).toBe('Jack & Jill')
     expect(joinNames([{name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}])).toBe('Bart, Lisa & Maggie')
     expect(joinNames([{name: 'Rose'}, {name: 'Martha'}, {name: 'Donna'}, {name: 'Amy'}, {name: 'Rory'}, {name: 'Clara'}, {name: 'Bill'}])).toBe('Rose, Martha, Donna, Amy, Rory, Clara & Bill')
   });
 });
-//Need a test if there are only two names, or only one name or no names
